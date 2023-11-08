@@ -1,0 +1,104 @@
+#contact_form{
+  position: relative;
+  width: 99%;
+  margin: auto;
+  height: auto;
+}
+
+#contact_form .input-field {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 3px;
+}
+
+#name {
+  position: relative;
+  display: block;
+  margin: 2px 0px 15px 5px;
+  color: #222;
+  
+}
+
+#email {
+  position: relative;
+  display: block;
+  margin: 2px 0px 15px 5px;
+  color: #222;
+  
+}
+
+.styled-select select {
+   background: white;
+   width: 240px;
+   padding: 5px;
+   font-size: inherit;
+   font-family: inherit;
+   color: #222;
+}
+
+.styled-select {
+  margin: 3px 0px 15px 5px;  
+}
+
+.select-field {
+  display: block;
+}
+
+
+#contact_form .textarea-field {
+  height: 180px;
+  padding: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: #222;
+}
+
+#message {
+  display: block;
+  margin: 2px 0px 15px 5px;
+}
+
+#submit_btn {
+  position: relative;
+  padding: 10px;
+  width: 180px;
+  background-color: white;
+  border: 0;
+  margin: 10px 3px;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#submit_btn:hover {
+  background-color: teal;
+  color: white;
+}
+
+#contact_body{
+  display: block;
+}
+
+
+@media screen and (min-width : 623px) {
+  #contact_form .textarea-field {
+  width: 60%;
+  }
+  
+  #contact_form .input-field {
+  width: 60%;
+  }
+  
+}
+
+@media screen and (max-width : 622px) {
+  #contact_form .textarea-field {
+  width: 90%;
+  }
+  
+  #contact_form .input-field {
+  width: 90%;
+  }
+  
+}

@@ -1,0 +1,828 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+
+<head>
+<title>PSS Test Page Closer</title>
+<script type="text/javascript">
+function closeToMobileApp(params) {
+    var mc1 = document.getElementById("mc1");
+    if( mc1 ) {
+    	mc1.style.background = "#cfc";
+    }
+    window.close();
+    return false;
+}
+window.close = function () {
+    var mc1 = document.getElementById("mc1");
+    if( mc1 ) {
+    	mc1.style.background = "#ccc";
+    }
+    window.location.assign("back://" + window.location);
+};
+</script>
+</head>
+<body>
+
+<h2>PSS Test Page Closer</h2>
+
+
+
+<form name="userreg" method="post" id="mc1">
+<input type="hidden" value="" id="confirmationCodeRequired" name="confirmationCodeRequired"/>
+<input type="hidden" value="" id="rePopulateVO" name="rePopulateVO"/> 
+<!-- End: /ctp/PropertyFile.jspf -->
+<!-- Below content added by Shama:for Time change pop up issue for deleting the Cache once the window is closed -->
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+
+<input type="hidden" name="CTP_EC_VIEWTASKNAME" value="CTPRegistrationStep1View" />
+<input type="hidden" name="CTP_EC_REDIRECTURL" value="" />
+<input type="hidden" name="CTP_PAGE_NO" value="" />
+<input type="hidden" name="CTP_SORT_METHOD" value="" />
+<input type="hidden" name="CTP_SORT_TYPE" value="" />
+<input type="hidden" name="CTP_COMMAND_STORE_ID" value="0" />
+<input type="hidden" name="CTP_LANGUAGE_ID" value="-1" />
+
+<input type="hidden" name="CTP_SORT_TBLORDERBEFORE" id="CTP_SORT_TBLORDERBEFORE" value="" /> 
+<input type="hidden" name="CTP_SORT_TBLORDERAFTER" id="CTP_SORT_TBLORDERAFTER" value="" />
+<input type="hidden" name="CTP_SORT_TBLCOLUMNCLICKED" id="CTP_SORT_TBLCOLUMNCLICKED" value="" />
+
+
+
+  
+
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" align="center" class="contentrightareanew wrap">
+	<!-- START: Registration header as /ctp/admin/RegisterUserHeader.jspf -->
+
+
+
+
+
+    <tr>
+		<td class="site"><img src="/ctp/images/spacer.gif" width="20px"
+			height="10px" alt="" />
+		<div class="sitetopdotted">
+		<div class="logo"><a href="http://www.emersonclimate.com/" target="_blank"><img src="/ctp/images/logo.gif" alt="EMERSON" /></a></div>
+		<div class="topnav">
+		<ul class=" pdtp20">   
+				
+			<li class="toUpper mrrt10"><img src="/ctp/images/dot.jpg" width="1px"
+				height="10px" alt="" /></li>
+			<li class="toUpper mrrt35"><a href="/ctp/html/ectp_help_def_new.htm" target="_blank">portal help</a></li>
+			<li class="toUpper mrrt10"><img src="/ctp/images/dot.jpg" width="1px"
+				height="10px" alt="" /></li>
+			<li class="toUpper mrrt35"><a href="/ctp/docs/2007DS-118 R3 C.pdf" target="_blank">quick user guide</a></li>
+			<li class="toUpper"><img src="/ctp/images/spacer.gif" width="20px"
+				height="1px" alt="" /></li>
+		</ul> 
+	</div></div></td></tr>
+
+
+<!--   END: Registration header as /ctp/admin/RegisterUserHeader.jspf -->  	
+    <!-- Content Area Starts Here -->
+    <tr>
+      <td width="100%">
+		<table cellpadding="0" cellspacing="0" border="0" width="980px">
+		<tr>
+	  	<td style="width:980px;border-bottom:1px dotted #8B8B8B;">
+	 	
+	 	 </td>
+		</tr>
+		</table>
+		</td>
+	</tr> 
+    <!-- Content Area Starts Here -->  
+    <tr>  
+      <td class="contentarea bdr" valign="top">
+        <table cellpadding="0" cellspacing="0" width="100%" border="0">
+          <tr>       
+            <!-- L eft navigation / portion Starts Here -->
+            <td class="leftnavigation" valign="top" style="vertical-align: top;">
+              <div class="cancel"><a href="#" onclick="closeToMobileApp(this)"><strong>Cancel Registration</strong></a></div>
+            </td>
+            <!-- Left navigation / portion Ends Here -->
+               
+            <!-- Content Right Area Starts Here -->
+            <td class="contentrightarea">
+              <table cellpadding="2" cellspacing="0" width="100%" border="0">
+
+                <tr>
+                  <td align="right" class="variation" colspan="2"> 
+                    
+                    	
+                    		English | <a href="CTPRegistration?CTP_LANGUAGE_ID=-5">Espanol</a>
+                    	
+                    	                    	
+                    	
+                  </td>
+                </tr>
+                <tr>  
+                  <td align="center" colspan="2">
+                    <B><SPAN id='registrationFailureMsg_MsgDivID'></SPAN>
+</B>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align="center" colspan="2">
+                    <h2 class="blockhdr">User Registration Form - Step 1 of 2</h2>
+                  </td>
+                </tr>    
+                <tr>  
+                  <td colspan="2"><span class="errmsg">Fields marked with an asterisk (*) are required.</span></td>
+                </tr>
+                
+        		                             
+                              
+                <!-- User Login Info  --> 
+                   
+				<!-- START /cpt/admin/UserLoginInfoInc.jspf -->
+
+
+
+
+
+
+<tr>
+
+<tr height="90px">
+  <td align="center">
+        <h2 class="blockhdr">Login Information</h2>
+  </td>
+  <TD align ="right">
+ <span style="position:absolute;top:170px;left:770px;text-align:center;">
+  <!--START - LiveChatRegistration.jspf-->
+<style type="text/css" media="screen"> 
+.rn_NotAvailable{
+background-image: url(/ctp/images/login.png); 
+background-repeat: no-repeat; 
+background-position: left top; 
+}
+
+</style> 
+
+<div id="myChatLinkContainer" class=" rn_NotAvailable" style="padding-top:15px;width:210px;height:90px">
+ <div id="myChatLink">
+	 <div id="myChatLinkInfo" style="padding-top:16px;padding-left:72px;text-align:center; width:132px;height:210px;font-size:9px; line-height:150%; vertical-align: middle"></div>
+ </div>
+</div>
+
+<script type="text/javascript" src="//emersonclimate.widget.custhelp.com/euf/rightnow/RightNow.Client.js"></script>
+
+<script type="text/javascript">
+    RightNow.Client.Controller.addComponent(
+        {
+           chat_login_page_height: 890,
+           chat_login_page_width: 1050,
+           ignore_preroute: true,                                      
+           container_element_id: "myChatLinkContainer",
+           label_available_immediately_template: "Agents are available to assist you. Click here to chat with them",
+            custom_fields: "{\"1\":\"1\"} ",
+            info_element_id: "myChatLinkInfo",
+            link_element_id: "myChatLink",
+            instance_id: "sccl_0",
+            module: "ConditionalChatLink",
+            type: 7
+        },
+        "//emersonclimate.widget.custhelp.com/ci/ws/get"
+    );
+</script>
+ <!--END - LiveChatRegistration.jspf-->            
+  </span>
+  </TD>
+</tr>
+<tr>
+  <td class="lblhdr bold"><label for="logonId">User Name</label></td>
+  <td class="lblfield">
+  			<INPUT id='logonId' name='logonId' tabindex='0' maxlength='100' validation='mandatoryUserInfo:UserReg.Mandatory.logonId' type='text' style='width:200px'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='logonId_MsgDivID'></SPAN>
+ </td>
+</tr>
+
+
+<tr>
+  <td class="lblhdr bold"><label for="logonPassword">Password</label></td>
+  <td class="lblfield">
+  			<INPUT id='logonPassword' name='logonPassword' tabindex='0' maxlength='20' validation='mandatory:UserReg.Mandatory.password' type='password'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='logonPassword_MsgDivID'></SPAN>
+ </td>
+</tr>
+<tr>
+  <td class="lblhdr bold"><label for="logonPasswordVerify">Password Confirmation</label></td>
+  <td class="lblfield">
+  	<INPUT id='logonPasswordVerify' name='logonPasswordVerify' tabindex='0' maxlength='20' validation='mandatory:UserReg.Mandatory.passwordVerify' type='password'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='logonPasswordVerify_MsgDivID'></SPAN>
+
+  	<SPAN id='logonPasswordCheck_MsgDivID'></SPAN>
+
+  </td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr/>
+<td>
+</tr>
+<!-- END /cpt/admin/UserLoginInfoInc.jspf --> 
+				          
+				<!-- Contact Info  -->
+				<!-- START /ctp/admin/UserContactInfo.jspf -->
+
+	<tr>
+	
+	  <td align="center" colspan="2">
+	    <h2 class="blockhdr">Contact Information</h2>
+	  </td>
+	  
+	</tr>
+	<tr>
+   
+      <td class="lblhdr bold"><label for="contactDetails.firstName">First Name</label></td>
+      <td class="lblfield">
+      <table>
+      <tr>
+      <td style="padding:0px;">
+      			<INPUT id='contactDetails.firstName' name='contactDetails.firstName' tabindex='0' maxlength='128' validation='mandatory:UserReg.Mandatory.firstName' type='text'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='contactDetails.firstName_MsgDivID'></SPAN>
+
+                </td>
+                 <td class="lblhdr bold"><label for="contactDetails.middleName">Middle Name</label></td>
+      <td class="lblfield">
+      			<INPUT id='contactDetails.middleName' name='contactDetails.middleName' tabindex='0' maxlength='128' type='text'  />&nbsp;<SPAN id='contactDetails.middleName_MsgDivID'></SPAN>
+
+      </td>
+      </tr>
+      </table>
+      </td>
+    
+   
+     
+   
+    </tr>
+    <tr>
+      <td class="lblhdr bold"><label for="contactDetails.lastName">Last Name</label></td>
+      <td class="lblfield">
+              	<INPUT id='contactDetails.lastName' name='contactDetails.lastName' tabindex='0' maxlength='128' validation='mandatory:UserReg.Mandatory.lastName' type='text'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='contactDetails.lastName_MsgDivID'></SPAN>
+ 
+      </td>
+    </tr>
+  
+    <tr> 
+      <td class="lblhdr bold"><label for="contactDetails.businessTitle">Job Title</label></td>
+      <td class="lblfield">
+      			<INPUT id='contactDetails.businessTitle' name='contactDetails.businessTitle' tabindex='0' maxlength='128' type='text'  />&nbsp;<SPAN id='contactDetails.businessTitle_MsgDivID'></SPAN>
+  
+      </td>
+    </tr>
+    
+       <tr>
+      <td class="lblhdr bold"><label for="contactDetails.address.email">Business Email</label></td>
+      <td class="lblfield"><INPUT id='contactDetails.address.email' name='contactDetails.address.email' tabindex='0' maxlength='256' validation='mandatoryEmail:UserReg.Mandatory.email' type='text'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='contactDetails.address.email_MsgDivID'></SPAN>
+ </td>
+    </tr>
+    
+     <tr>
+      <td class="lblhdr bold"><label for="phone.phone1">Telephone</label></td>
+      <td class="lblfield" nowrap>
+        <div style="float:left;">
+        <span id="phoneForUS">
+            <INPUT id='contactDetails.phone.phone1' name='contactDetails.phone.phone1' tabindex='0' maxlength='3' type='text' onkeyup='javascript:autoTabForPhone(this,3,2);' style='width:50px;'  />&nbsp;
+
+            - <label for="phone2" style="display:none;">Phone2</label> 
+            <INPUT id='contactDetails.phone.phone2' name='contactDetails.phone.phone2' tabindex='0' maxlength='3' type='text' onkeyup='javascript:autoTabForPhone(this,3,3);' style='width:50px;'  />&nbsp;
+
+            - <label for="phone3" style="display:none;">Phone3</label> 
+            <INPUT id='contactDetails.phone.phone3' name='contactDetails.phone.phone3' tabindex='0' maxlength='26' type='text' onkeyup='javascript:autoTabForPhone(this,26,4);' style='width:50px;'  />&nbsp;<span class='errmsg1'>*</span>
+
+		</span>
+		<span id="phoneForOthers">
+            <INPUT id='contactDetails.phone.phoneNumber' name='contactDetails.phone.phoneNumber' tabindex='0' maxlength='26' type='text' style='width:150px;'  />&nbsp;<span class='errmsg1'>*</span>
+                    
+        </span>
+        </div>
+        <div class="bold">
+        <label for="phone.extension">&nbsp;&nbsp;Ext</label>
+       		&nbsp;<INPUT id='contactDetails.phone.extension' name='contactDetails.phone.extension' tabindex='0' maxlength='10' type='text' style='width:50px;'  />&nbsp;
+
+       		<span id="countryCodeForOthers" class="errmsg">Please include country code</span>
+			<SPAN id='phoneNumber_MsgDivID'></SPAN>
+
+		</div>
+        </td>
+    </tr>
+ 
+    <tr>
+	
+	  <td align="center" colspan="2">
+	    <h2 class="blockhdr">Company Information</h2>
+	  </td>
+	  
+	</tr>
+    
+    
+      <tr>
+      <td class="lblhdr bold"><label for="contactDetails.organizationName">Company Name</label></td>
+      <td class="lblfield">
+      			<INPUT id='contactDetails.organizationName' name='contactDetails.organizationName' tabindex='0' maxlength='128' validation='mandatory:UserReg.Mandatory.companyName' type='text'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='contactDetails.organizationName_MsgDivID'></SPAN>
+  
+      </td>
+    </tr>  
+    
+    <tr>
+      <td class="lblhdr bold"><label for="contactDetails.address.address1">Mailing Address</label></td>
+      <td class="lblfield">
+              <INPUT id='contactDetails.address.address1' name='contactDetails.address.address1' tabindex='0' maxlength='50' validation='mandatory:UserReg.Mandatory.addressField1' type='text' style='width:200px' class='textClass'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='contactDetails.address.address1_MsgDivID'></SPAN>
+ 
+      </td>
+    </tr>
+    <tr>
+      <td class="lblhdr bold"><label for="contactDetails.address.address2" style="display:none;">Mailing Address1</label></td>
+      <td class="lblfield"><INPUT id='contactDetails.address.address2' name='contactDetails.address.address2' tabindex='0' maxlength='50' type='text' style='width:200px'  />&nbsp;<SPAN id='contactDetails.address.address2_MsgDivID'></SPAN>
+</td>
+    </tr>
+   
+    <tr>
+      <td class="lblhdr bold"><label for="contactDetails.address.city">City</label></td>
+      <td class="lblfield">
+          		<INPUT id='contactDetails.address.city' name='contactDetails.address.city' tabindex='0' maxlength='128' validation='mandatory:UserReg.Mandatory.city' type='text'  />&nbsp;<span class='errmsg1'>*</span><SPAN id='contactDetails.address.city_MsgDivID'></SPAN>
+ 
+      </td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td class="lblhdr bold"><label for="contactDetails.address.country">Country</label></td>
+      <td class="lblfield">  
+      <SPAN id="countryTypeSPAN">   
+          <div class='formSelect_div' style='vertical-align: middle;text-align: left;'><SELECT style=' vertical-align: middle;text-align: left;' id='contactDetails.address.country' name='contactDetails.address.country' onchange='javascript:countryChanged1(this, "-1")' class='formSelect dropdown' tabindex='0' validation='mandatory:UserReg.Mandatory.country'  >&nbsp;
+	<OPTION value=''>-- Please Select --</OPTION>	<OPTION value='AF' >Afghanistan</OPTION>
+	<OPTION value='AL' >Albania</OPTION>
+	<OPTION value='DZ' >Algeria</OPTION>
+	<OPTION value='AS' >American Samoa</OPTION>
+	<OPTION value='AD' >Andorra</OPTION>
+	<OPTION value='AO' >Angola</OPTION>
+	<OPTION value='AI' >Anguilla</OPTION>
+	<OPTION value='AQ' >Antarctica</OPTION>
+	<OPTION value='AG' >Antigua and Barbuda</OPTION>
+	<OPTION value='AR' >Argentina</OPTION>
+	<OPTION value='AM' >Armenia</OPTION>
+	<OPTION value='AW' >Aruba</OPTION>
+	<OPTION value='AU' >Australia</OPTION>
+	<OPTION value='AT' >Austria</OPTION>
+	<OPTION value='AZ' >Azerbaijan</OPTION>
+	<OPTION value='BS' >Bahamas</OPTION>
+	<OPTION value='BH' >Bahrain</OPTION>
+	<OPTION value='BD' >Bangladesh</OPTION>
+	<OPTION value='BB' >Barbados</OPTION>
+	<OPTION value='BY' >Belarus</OPTION>
+	<OPTION value='BE' >Belgium</OPTION>
+	<OPTION value='BZ' >Belize</OPTION>
+	<OPTION value='BJ' >Benin</OPTION>
+	<OPTION value='BM' >Bermuda</OPTION>
+	<OPTION value='BT' >Bhutan</OPTION>
+	<OPTION value='BO' >Bolivia</OPTION>
+	<OPTION value='BA' >Bosnia and Herzegovina</OPTION>
+	<OPTION value='BW' >Botswana</OPTION>
+	<OPTION value='BV' >Bouvet Island</OPTION>
+	<OPTION value='BR' >Brazil</OPTION>
+	<OPTION value='IO' >British Indian Ocean Territory</OPTION>
+	<OPTION value='BN' >Brunei</OPTION>
+	<OPTION value='BG' >Bulgaria</OPTION>
+	<OPTION value='BF' >Burkina Faso</OPTION>
+	<OPTION value='BI' >Burundi</OPTION>
+	<OPTION value='KH' >Cambodia</OPTION>
+	<OPTION value='CM' >Cameroon</OPTION>
+	<OPTION value='CA' >Canada</OPTION>
+	<OPTION value='CV' >Cape Verde</OPTION>
+	<OPTION value='KY' >Cayman Islands</OPTION>
+	<OPTION value='CF' >Central African Republic</OPTION>
+	<OPTION value='TD' >Chad</OPTION>
+	<OPTION value='CL' >Chile</OPTION>
+	<OPTION value='CN' >China</OPTION>
+	<OPTION value='CX' >Christmas Island</OPTION>
+	<OPTION value='CC' >Cocos Islands</OPTION>
+	<OPTION value='CO' >Colombia</OPTION>
+	<OPTION value='KM' >Comoros</OPTION>
+	<OPTION value='CG' >Congo</OPTION>
+	<OPTION value='CD' >Congo, Democratic Republic of the</OPTION>
+	<OPTION value='CK' >Cook Islands</OPTION>
+	<OPTION value='CR' >Costa Rica</OPTION>
+	<OPTION value='CI' >Cote d'Ivoire</OPTION>
+	<OPTION value='HR' >Croatia</OPTION>
+	<OPTION value='CY' >Cyprus</OPTION>
+	<OPTION value='CZ' >Czech Republic</OPTION>
+	<OPTION value='DK' >Denmark</OPTION>
+	<OPTION value='DJ' >Djibouti</OPTION>
+	<OPTION value='DM' >Dominica</OPTION>
+	<OPTION value='DO' >Dominican Republic</OPTION>
+	<OPTION value='TP' >East Timor</OPTION>
+	<OPTION value='EC' >Ecuador</OPTION>
+	<OPTION value='EG' >Egypt</OPTION>
+	<OPTION value='SV' >El Salvador</OPTION>
+	<OPTION value='GQ' >Equatorial Guinea</OPTION>
+	<OPTION value='ER' >Eritrea</OPTION>
+	<OPTION value='EE' >Estonia</OPTION>
+	<OPTION value='ET' >Ethiopia</OPTION>
+	<OPTION value='FK' >Falkland Islands</OPTION>
+	<OPTION value='FO' >Faroe Islands</OPTION>
+	<OPTION value='FJ' >Fiji</OPTION>
+	<OPTION value='FI' >Finland</OPTION>
+	<OPTION value='FR' >France</OPTION>
+	<OPTION value='GF' >French Guiana</OPTION>
+	<OPTION value='PF' >French Polynesia</OPTION>
+	<OPTION value='TF' >French Southern Territories</OPTION>
+	<OPTION value='GA' >Gabon</OPTION>
+	<OPTION value='GM' >Gambia</OPTION>
+	<OPTION value='GE' >Georgia</OPTION>
+	<OPTION value='DE' >Germany</OPTION>
+	<OPTION value='GH' >Ghana</OPTION>
+	<OPTION value='GI' >Gibraltar</OPTION>
+	<OPTION value='GR' >Greece</OPTION>
+	<OPTION value='GL' >Greenland</OPTION>
+	<OPTION value='GD' >Grenada</OPTION>
+	<OPTION value='GP' >Guadeloupe</OPTION>
+	<OPTION value='GU' >Guam</OPTION>
+	<OPTION value='GT' >Guatemala</OPTION>
+	<OPTION value='GN' >Guinea</OPTION>
+	<OPTION value='GW' >Guinea-Bissau</OPTION>
+	<OPTION value='GY' >Guyana</OPTION>
+	<OPTION value='HT' >Haiti</OPTION>
+	<OPTION value='HM' >Heard Island and Mcdonald Islands</OPTION>
+	<OPTION value='VA' >Holy See</OPTION>
+	<OPTION value='HN' >Honduras</OPTION>
+	<OPTION value='HK' >Hong Kong S.A.R. of China</OPTION>
+	<OPTION value='HU' >Hungary</OPTION>
+	<OPTION value='IS' >Iceland</OPTION>
+	<OPTION value='IN' >India</OPTION>
+	<OPTION value='ID' >Indonesia</OPTION>
+	<OPTION value='IQ' >Iraq</OPTION>
+	<OPTION value='IE' >Ireland</OPTION>
+	<OPTION value='IL' >Israel</OPTION>
+	<OPTION value='IT' >Italy</OPTION>
+	<OPTION value='JM' >Jamaica</OPTION>
+	<OPTION value='JP' >Japan</OPTION>
+	<OPTION value='JO' >Jordan</OPTION>
+	<OPTION value='KZ' >Kazakhstan</OPTION>
+	<OPTION value='KE' >Kenya</OPTION>
+	<OPTION value='KI' >Kiribati</OPTION>
+	<OPTION value='KR' >Korea, South</OPTION>
+	<OPTION value='KW' >Kuwait</OPTION>
+	<OPTION value='KG' >Kyrgyzstan</OPTION>
+	<OPTION value='LA' >Laos</OPTION>
+	<OPTION value='LV' >Latvia</OPTION>
+	<OPTION value='LB' >Lebanon</OPTION>
+	<OPTION value='LS' >Lesotho</OPTION>
+	<OPTION value='LR' >Liberia</OPTION>
+	<OPTION value='LY' >Libya</OPTION>
+	<OPTION value='LI' >Liechtenstein</OPTION>
+	<OPTION value='LT' >Lithuania</OPTION>
+	<OPTION value='LU' >Luxembourg</OPTION>
+	<OPTION value='MO' >Macau S.A.R. of China</OPTION>
+	<OPTION value='MK' >Macedonia</OPTION>
+	<OPTION value='MG' >Madagascar</OPTION>
+	<OPTION value='MW' >Malawi</OPTION>
+	<OPTION value='MY' >Malaysia</OPTION>
+	<OPTION value='MV' >Maldives</OPTION>
+	<OPTION value='ML' >Mali</OPTION>
+	<OPTION value='MT' >Malta</OPTION>
+	<OPTION value='MH' >Marshall Islands</OPTION>
+	<OPTION value='MQ' >Martinique</OPTION>
+	<OPTION value='MR' >Mauritania</OPTION>
+	<OPTION value='MU' >Mauritius</OPTION>
+	<OPTION value='YT' >Mayotte</OPTION>
+	<OPTION value='MX' >Mexico</OPTION>
+	<OPTION value='FM' >Micronesia</OPTION>
+	<OPTION value='MD' >Moldova</OPTION>
+	<OPTION value='MC' >Monaco</OPTION>
+	<OPTION value='MN' >Mongolia</OPTION>
+	<OPTION value='MS' >Montserrat</OPTION>
+	<OPTION value='MA' >Morocco</OPTION>
+	<OPTION value='MZ' >Mozambique</OPTION>
+	<OPTION value='MM' >Myanmar</OPTION>
+	<OPTION value='NA' >Namibia</OPTION>
+	<OPTION value='NR' >Nauru</OPTION>
+	<OPTION value='NP' >Nepal</OPTION>
+	<OPTION value='NL' >Netherlands</OPTION>
+	<OPTION value='AN' >Netherlands Antilles</OPTION>
+	<OPTION value='NC' >New Caledonia</OPTION>
+	<OPTION value='NZ' >New Zealand</OPTION>
+	<OPTION value='NI' >Nicaragua</OPTION>
+	<OPTION value='NE' >Niger</OPTION>
+	<OPTION value='NG' >Nigeria</OPTION>
+	<OPTION value='NU' >Niue</OPTION>
+	<OPTION value='NF' >Norfolk Island</OPTION>
+	<OPTION value='MP' >Northern Mariana Islands</OPTION>
+	<OPTION value='NO' >Norway</OPTION>
+	<OPTION value='OM' >Oman</OPTION>
+	<OPTION value='PK' >Pakistan</OPTION>
+	<OPTION value='PW' >Palau</OPTION>
+	<OPTION value='PS' >Palestinian Territory</OPTION>
+	<OPTION value='PA' >Panama</OPTION>
+	<OPTION value='PG' >Papua New Guinea</OPTION>
+	<OPTION value='PY' >Paraguay</OPTION>
+	<OPTION value='PE' >Peru</OPTION>
+	<OPTION value='PH' >Philippines</OPTION>
+	<OPTION value='PN' >Pitcairn</OPTION>
+	<OPTION value='PL' >Poland</OPTION>
+	<OPTION value='PT' >Portugal</OPTION>
+	<OPTION value='PR' >Puerto Rico</OPTION>
+	<OPTION value='QA' >Qatar</OPTION>
+	<OPTION value='RE' >Reunion</OPTION>
+	<OPTION value='RO' >Romania</OPTION>
+	<OPTION value='RU' >Russian Federation</OPTION>
+	<OPTION value='RW' >Rwanda</OPTION>
+	<OPTION value='SH' >Saint Helena</OPTION>
+	<OPTION value='KN' >Saint Kitts and Nevis</OPTION>
+	<OPTION value='LC' >Saint Lucia</OPTION>
+	<OPTION value='PM' >Saint Pierre and Miquelon</OPTION>
+	<OPTION value='VC' >Saint Vincent and the Grenadines</OPTION>
+	<OPTION value='WS' >Samoa</OPTION>
+	<OPTION value='SM' >San Marino</OPTION>
+	<OPTION value='ST' >Sao Tome and Principe</OPTION>
+	<OPTION value='SA' >Saudi Arabia</OPTION>
+	<OPTION value='SN' >Senegal</OPTION>
+	<OPTION value='SC' >Seychelles</OPTION>
+	<OPTION value='SL' >Sierra Leone</OPTION>
+	<OPTION value='SG' >Singapore</OPTION>
+	<OPTION value='SK' >Slovakia</OPTION>
+	<OPTION value='SI' >Slovenia</OPTION>
+	<OPTION value='SB' >Solomon Islands</OPTION>
+	<OPTION value='SO' >Somalia</OPTION>
+	<OPTION value='ZA' >South Africa</OPTION>
+	<OPTION value='GS' >South Georgia and the South Sandwich Islands</OPTION>
+	<OPTION value='ES' >Spain</OPTION>
+	<OPTION value='LK' >Sri Lanka</OPTION>
+	<OPTION value='SR' >Suriname</OPTION>
+	<OPTION value='SJ' >Svalbard and Jan Mayen</OPTION>
+	<OPTION value='SZ' >Swaziland</OPTION>
+	<OPTION value='SE' >Sweden</OPTION>
+	<OPTION value='CH' >Switzerland</OPTION>
+	<OPTION value='TW' >Taiwan</OPTION>
+	<OPTION value='TJ' >Tajikistan</OPTION>
+	<OPTION value='TZ' >Tanzania</OPTION>
+	<OPTION value='TH' >Thailand</OPTION>
+	<OPTION value='TG' >Togo</OPTION>
+	<OPTION value='TK' >Tokelau</OPTION>
+	<OPTION value='TO' >Tonga</OPTION>
+	<OPTION value='TT' >Trinidad and Tobago</OPTION>
+	<OPTION value='TN' >Tunisia</OPTION>
+	<OPTION value='TR' >Turkey</OPTION>
+	<OPTION value='TM' >Turkmenistan</OPTION>
+	<OPTION value='TC' >Turks and Caicos Islands</OPTION>
+	<OPTION value='TV' >Tuvalu</OPTION>
+	<OPTION value='UG' >Uganda</OPTION>
+	<OPTION value='UA' >Ukraine</OPTION>
+	<OPTION value='AE' >United Arab Emirates</OPTION>
+	<OPTION value='GB' >United Kingdom</OPTION>
+	<OPTION value='US' selected >United States</OPTION>
+	<OPTION value='UM' >United States Minor Outlying Islands</OPTION>
+	<OPTION value='UY' >Uruguay</OPTION>
+	<OPTION value='UZ' >Uzbekistan</OPTION>
+	<OPTION value='VU' >Vanuatu</OPTION>
+	<OPTION value='VE' >Venezuela</OPTION>
+	<OPTION value='VN' >Viet Nam</OPTION>
+	<OPTION value='VG' >Virgin Islands, British</OPTION>
+	<OPTION value='VI' >Virgin Islands, US</OPTION>
+	<OPTION value='WF' >Wallis and Futuna</OPTION>
+	<OPTION value='EH' >Western Saraha</OPTION>
+	<OPTION value='YE' >Yemen</OPTION>
+	<OPTION value='YU' >Yugoslavia</OPTION>
+	<OPTION value='ZM' >Zambia</OPTION>
+	<OPTION value='ZW' >Zimbabwe</OPTION>
+</SELECT></div>&nbsp;<span class='errmsg1'>*</span><SPAN id='contactDetails.address.country_MsgDivID'></SPAN>
+ 
+         </SPAN> 
+      </td>
+    </tr>
+    <tr>
+      <td class="lblhdr bold"><label for="contactDetails.address.state">State / Province</label></td>
+      <td class="lblfield">
+      <span id="statesDIV">
+     	<input type="text" maxlength="128" name="contactDetails.address.state" value="" editable="true"/>
+      </span>                   
+      </td> 
+    </tr>
+    <tr>
+      <td class="lblhdr bold"><label for="contactDetails.address.zip">Zip / Postal Code</label></td>
+      <td class="lblfield">
+		      <span id="zipCodeDIV">
+		      <input type="text" maxlength="128" name="contactDetails.address.zip" value="" editable="true"/>
+		      </span>                   
+       </td>
+    </tr>    
+    
+    
+	    
+	    
+	    
+		    
+	    
+    
+    		<!-- changes for Asia distributor start -->
+	    <tr>
+	      <td class="lblhdr bold"><label for="businessType">Business Type</label></td>
+	      <td class="lblfield">	                     
+	         <div class='formSelect_div' style='vertical-align: middle;text-align: left;'><SELECT style=' vertical-align: middle;text-align: left;' id='businessType' name='businessType' onchange='javascript:populateJobFn("employeeTypeSPAN","-1",this,"","");primaryMarketDisplay(this);populateLanguage(this);
+	        portalAccessDisplay(this);' class='formSelect dropdown' tabindex='0' validation='mandatory:UserReg.Mandatory.businessType'  >&nbsp;
+	<OPTION value=''>-- Please Select --</OPTION>	<OPTION value='CON' >Contractor</OPTION>
+	<OPTION value='OEM' >OEM</OPTION>
+	<OPTION value='OTH' >Other</OPTION>
+	<OPTION value='WHL' >Wholesaler</OPTION>
+	<OPTION value='AFT' >OEM Aftermarket</OPTION>
+	<OPTION value='RET' >Retail</OPTION>
+	<OPTION value='AD' >Asia Distributor</OPTION>
+</SELECT></div>&nbsp;<span class='errmsg1'>*</span><SPAN id='businessType_MsgDivID'></SPAN>
+    
+	      </td>
+	      <!-- changes for Asia distributor ends -->
+	    </tr><!-- <span id="employeeTypeSPAN"></span>
+Added by savitri
+    --><tr>
+      <td class="lblhdr bold"><label for="employeeType">Job Function</label></td>
+      <td class="lblfield">
+      <span id="employeeTypeSPAN">      
+       <div class='formSelect_div' style='vertical-align: middle;text-align: left;'><SELECT style=' vertical-align: middle;text-align: left;' id='employeeType' name='employeeType' class='formSelect dropdown' tabindex='0'  >&nbsp;
+</SELECT></div>&nbsp;<SPAN id='employeeType_MsgDivID'></SPAN>
+</span>
+      <span class="errmsg1">*</span> 
+      </td>
+    </tr>
+       
+    <tr>
+    	<td colspan="2" align="left">
+    		<table id="PortalAccessInfo" cellspacing="0" cellpadding="0" width="70%" border="0" align="left">
+    			<tr>
+    				<td align="right" class="lblhdr" style="width:23%;text-align:left;padding-left:72px;white-space:nowrap;">
+				      	<label for="contractorportal">Portal Access</label>
+				    </td>
+			       <td align="left" class="lblfield" style="width:77%;text-align:left;">
+				        <input type="checkbox" id="contPortal" disabled checked /><label for="contPortal" style="font-weight:normal;">Contractor Portal</label>         
+			       </td>
+    			</tr>
+    		</table>
+    	</td>
+    </tr>    
+    
+     
+   
+    <!-- changes for Asia distributor start -->
+    <tr>
+      <td class="lblhdr bold"><label for="preferredLanguage">Language</label></td>
+      <td class="lblfield">
+      <SPAN id="languageTypeSPAN">
+        <div class='formSelect_div' style='vertical-align: middle;text-align: left;'><SELECT style=' vertical-align: middle;text-align: left;' id='preferredLanguage' name='preferredLanguage' onchange='javascript:checkThis(this);' class='formSelect dropdown' tabindex='0'  >&nbsp;
+	<OPTION value='-1' >English</OPTION>
+	<OPTION value='-5' >Espanol</OPTION>
+</SELECT></div>&nbsp;<SPAN id='preferredLanguage_MsgDivID'></SPAN>
+
+    		
+    		</SPAN>
+      </td>
+    </tr>
+    <!-- changes for Asia distributor ends -->
+    
+    <tr>
+      <td class="lblhdr bold"><label for="otherLanguage">(or) Other</label></td>
+      <td class="lblfield">
+        <INPUT id='otherLanguage' name='otherLanguage' tabindex='0' maxlength='30' type='text' style='width:200px'  />&nbsp;<SPAN id='otherLanguage_MsgDivID'></SPAN>
+
+      </td>
+    </tr>    
+    
+<!-- END /ctp/admin/UserContactInfo.jspf -->   
+				  
+				<!-- Primary Market Info  --> 
+				<!-- START /ctp/admin/UserPrimaryMarketingInfoInc.jspf -->
+<div id="PrimaryMarketInfo">
+<tr>
+      <td class="lblhdr bold"> <label >Primary Market(s) <span class="errmsg1">*</span> </label>      
+		     </td>
+      <td class="lblfield"><label >
+          		<span style="font-weight:normal;">  (Check All That Apply) </span></label>
+      </td>
+</tr>
+<tr><td colspan="2" align="center">
+		      <fieldset>
+		      <legend style="display:none;">Primary Market(s)(Check All That Apply)</legend>
+		 <table>    <tr>
+		         <td class="lblhdr bold">
+		            <input type='checkbox' name='primaryMarkets' id='primaryMarkets' value='AC' />
+ <label style="font-weight:normal;" >Air Conditioning</label>
+		          </td>
+		         
+		          <td class="lblhdr bold">
+		         
+		          <td>
+		            <input type='checkbox' name='primaryMarkets' id='primaryMarkets' value='HT' />
+ <label style="font-weight:normal;">Heating</label>
+		         </td>
+		         
+		          <td>
+		            <input type='checkbox' name='primaryMarkets' id='primaryMarkets' value='RF' />
+ <label style="font-weight:normal;">Refrigeration</label>
+		          </td>
+		       </td></tr>
+		       </table> 
+		    </fieldset>
+		    <SPAN id='primaryMarkets_MsgDivID'></SPAN>
+  
+		  </td>
+		</tr>			
+
+</div>
+<!-- START /ctp/admin/UserPrimaryMarketingInfoInc.jspf -->
+  
+				  <tr>
+					<td colspan="2">
+					<hr/>
+					<td>
+				  </tr>
+				  			  
+                <tr>  
+                  <td align="center" colspan="2">
+                    <h2 class="blockhdr">Terms and Conditions</h2>
+                  </td>
+                </tr>
+                  
+                
+                 
+                
+                 
+                
+                
+                
+                <tr>
+                  <td colspan="2" class="sublink">
+                    <div>Please accept website usage <a href="javascript:openPDF();">Terms and Conditions</a>  before proceeding with registration.</div>
+                    <div style="padding:5px 0px 0px 35px;">
+                     
+                      <input type="checkbox" name="acceptTC"  /><span id="acceptTC_MsgDivID"></span>
+                       <label for="accept">Accept</label> 
+                    </div>  
+                    <div style="padding:5px 0px 0px 35px;">
+                      
+                      <input type="checkbox" id="signMeUp" name="singMeUp"  /><span id="singMeUp_MsgDivID"></span>
+                      <label for="singMeUp">Yes, sign me up for Marketing Alerts (Optional)</label> 
+                    </div>  
+                    
+                    
+                  </td>
+                </tr> 
+                <tr>
+                  <td colspan="2" align="center">
+                  	<input type="hidden" name="hid_action" value="STEP2" />
+                  	<input type="hidden" name="URL" value="CTPHomeCntrCmd" />
+                  	<input type="hidden" name="receiveEmail" id="receiveEmail" value="false" />
+                  	<a class="reg_cont1" href="javascript:processRegUserStep1();">Accept<img src="/ctp/images/continue83x15.gif" alt="Continue" border="0" /></a>
+                    <!--<input type="button" class="buttonstyle" value="Continue" id="Next" onclick="javscript:processRegUserStep1()" />-->
+                    <div>&nbsp;</div> 
+                  </td>
+                </tr> 
+              </table>
+            </td>
+            <!-- Content Right Area Ends Here -->
+          </tr>
+          
+        </table>
+      </td>
+    </tr>
+	<!-- START: Registration footer as /ctp/admin/RegisterUserFooter.jspf-->
+
+
+
+
+
+    <tr>
+      <td class="alignr">
+      <div class="footer">
+			<span class="bold"><a href="http://www.emerson.com/en-US/Pages/privacy_policy.aspx" target="_blank">PRIVACY POLICY</a><img src="/ctp/images/spacer.gif" width="35px" height="1px" alt=""/><a href="http://www.emerson.com/en-US/Pages/Web_Site_Terms_of_Use_and_Legal_Restrictions.aspx" target="_blank">TERMS OF USE</a></span><br />
+			<p class="lineht"><span>&copy; 
+      <script language="javascript" type="text/javascript">
+        	var mydate=new Date()
+            var year=mydate.getYear()
+            if (year < 1000)
+            	year+=1900
+                document.write(year);
+        </script>
+      Emerson Electric Co. All rights reserved.</span></p>
+			<span class="bold">CONSIDER IT SOLVED.</span>
+			</div></td>
+    </tr>
+
+
+<!--   END: Registration footer as /ctp/admin/RegisterUserFooter.jspf-->
+    <!-- Content Area Ends Here -->
+</table>
+
+
+
+  
+ </form>
+
+</body>
+</html>

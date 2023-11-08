@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.fb_icon {
+	background: url('clm_sprite_2.png') no-repeat -25px 0;
+	height: 21px;
+	width: 21px;
+	display: inline-block;
+}
+.pt_icon {
+	background: url('clm_sprite_2.png') no-repeat 0 0;
+	height: 21px;
+	width: 21px;
+	display: inline-block;
+}
+.tw_icon {
+	background: url('clm_sprite_2.png') no-repeat -51px 0;
+	height: 21px;
+	width: 21px;
+	display: inline-block;
+}
+.fb_icon:hover {
+	background: url('clm_sprite_2.png') no-repeat -25px -25px;
+	height: 21px;
+	width: 21px;
+	display: inline-block;
+}
+.pt_icon:hover {
+	background: url('clm_sprite_2.png') no-repeat 0 -25px;
+	height: 21px;
+	width: 21px;
+	display: inline-block;
+}
+.tw_icon:hover {
+	background: url('clm_sprite_2.png') no-repeat -51px -25px;
+	height: 21px;
+	width: 21px;
+	display: inline-block;
+}
+.xmc_ick > span {
+	width: 21px;
+	height: 21px;
+	overflow: hidden;
+	margin-left: -100%;
+}
+.xmc_ick > span:after {
+	content: 'ick';
+	z-index: 999;
+	background: red;
+	height: 21px;
+	width: 21px;
+}
+</style>
+</head>
+
+<body>
+<a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world"
+  data-size="large">
+  <img src="clm_sprite_1.png"/></a>
+
+<img src="flying-records.png"/>
+	<div id="container">
+	Pinterest <div class="pt_icon"></div>
+	</div>
+	<div id="container">
+	Facebook <div class="fb_icon"></div>
+	</div>
+	<div id="container">
+	Twitter <div class="tw_icon">
+	<div class="mc_ick"><a class="pt_icon" data-pin-custom="true" data-pin-do="buttonBookmark" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/"></a></div></div>
+	</div>
+<script  data-pin-custom="true" async defer src="http://assets.pinterest.com/js/pinit.js"></script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [ ];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+</body>
+
+</html>

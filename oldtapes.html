@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="simple6.css" />
+		<style type="text/css">
+			@import "complex.css";
+			@import "complex_vnav.css";
+			a {outline: none;}
+			td.demoTitle { width: 12em; }
+		</style>
+		<link rel="stylesheet" type="text/css" href="pallette-cplx15.css" />
+		<link rel="stylesheet" type="text/css" href="white.css" />
+		<title>McKenzie Family Old Tapes</title>
+<script type="text/javascript" src="../player/swfobject.js"></script>
+<script type="text/javascript" src="../player/mcmarkio.js"></script>
+<script type="text/javascript">
+
+// To track currently displayed and playing song / section...
+var inplay_item_id = "";
+  function stateMonitor( obj ) {
+  	if( obj.newstate == "COMPLETED" ) {
+  		var play_icon = document.getElementById( inplay_item_id );
+  		if( play_icon ) {
+  			play_icon.src = play_icon.src.replace( "stop", "play" );
+			play_icon.parentNode.title = "Play this song";
+  		}
+  	}
+  }
+  function stopped( what ) {
+  	if( inplay_item_id != "" ) {
+  		var play_icon = document.getElementById( inplay_item_id );
+  		if( play_icon ) {
+  			play_icon.src = play_icon.src.replace( "stop", "play" );
+			play_icon.parentNode.title = "Play this song";
+  		}
+  	}
+  }
+  function played( what ) {
+  	if( inplay_item_id != "" ) {
+  		var play_icon = document.getElementById( inplay_item_id );
+  		if( play_icon ) {
+  			play_icon.src = play_icon.src.replace( "play", "stop" );
+			play_icon.parentNode.title = "Stop playing this song";
+  		}
+  	}
+  }
+  function nuts( mp3, title, divi, itemi, noplay ) {
+  		var autoplay = 'y';
+  		if( noplay ) {
+  			autoplay = noplay;
+  		}
+		playSongX( mp3, title, 'who', divi, itemi, autoplay );
+		return;
+  }
+
+  function playSongX(url, title, artist, section, itemi, autoplay )
+  {
+  	var player = document.getElementById( section + "_flash" );
+  	var clicked_icon = document.getElementById( itemi );
+
+  	if( !clicked_icon || !player ) {
+  		// This shouldn't happen unless wrong id code or no id coded for the play image
+  		alert( 'Nuts - couldn\'t find player and/or icon' );
+  		return;
+  	}
+	inplay_section = section;
+
+  	if( !player.sendEvent ) {
+  		alert( player + " no sendEvent" );
+  		return;
+  	}
+
+
+  	if( clicked_icon.src.indexOf( "play" ) >= 0 ) {
+  		// Clicked on a "play" icon
+
+		// If previous "in play" is different track, reset its icon...
+		if( inplay_item_id != itemi ) {
+			var pi = document.getElementById( inplay_item_id );
+			if( pi ) {
+				pi.src = pi.src.replace( "stop", "play" );
+			}
+		}
+
+		// Remember what we're playing
+		inplay_item_id = itemi;
+
+  		// Change icon to "stop" for this track...
+  		clicked_icon.src = clicked_icon.src.replace( "play", "stop" );
+
+  		// Load this track and start it playing...
+		player.sendEvent( "LOAD", "http://www.mckenzieduo.com/sounds/" + url );
+		player.sendEvent( "PLAY" );
+
+		var title_area = document.getElementById( "now_playing" );
+		if( title_area ) {
+			title_area.innerHTML = title;
+		}
+		clicked_icon.parentNode.title = "Stop playing this song";
+
+	} else {
+		// Clicked on a "stop" icon
+
+  		// Change icon to "stop" for this track...
+  		clicked_icon.src = clicked_icon.src.replace( "stop", "play" );
+		clicked_icon.parentNode.title = "Play this song";
+
+		// Stop the player
+		player.sendEvent( "STOP" );
+	}
+
+
+
+
+  }
+
+function loadMe() {
+	// put this frame's title on top-level window...
+	top.document.title = document.title;
+	loadPlayer( 'demo-full.mp3','listen_player' );
+}
+
+
+</script>
+
+	</head>
+	<body onload="loadMe()">
+
+		<div id="oldbrowser">
+			<p>
+				This site will look much better in a browser that supports
+				<a href="http://www.webstandards.org/upgrade/"
+				title="Download a browser that complies with Web standards.">web
+				standards</a>, but it is accessible to any browser or Internet
+				device.
+			</p>
+		</div>
+
+
+<!=====================================================================================>
+	<div class="layout"><div class="main1"><table width="640">
+<!=====================================================================================>
+
+	<tr valign="top">
+	<td class="masthead"><div class="mastWrap"><h1>McKenzie Duo</h1></div></td>
+
+<!=====================================================================================>
+	<td class="gutter" rowspan="2"></td>
+<!=====================================================================================>
+	<td rowspan="2" class="nuts">
+
+	<div class="logo1"></div>
+	<div class="leftWrap">
+					
+	</div>
+	</td>
+
+	</tr>
+
+<!=====================================================================================>
+
+
+	<tr valign="top">
+
+
+
+
+	<td class="middle">
+	<div class="midWrap">
+
+<h3>Old McKenzie Family Tapes</h3>
+<p>
+<img src="../images/tape_deck.jpg" class="rightImg" style="border: 0px;">
+Here are recordings copied from the old family reel-to-reel tapes.  You can play
+a recording using the flash player on this page.
+</p>
+<p>You can also download a recording by clicking on the <img src="../images/play-icon4.gif"> image.
+</p>
+<p>
+These recordings are pretty much "raw" with very little editing, and no noise reduction. 
+Humming, buzzing, and gaps of silence are not uncommon.  A few of the recordings don't
+start sound until a few seconds into the playback.</p>
+<p><strong>Enjoy!</strong></p>
+
+<div style="padding-left: .5em; padding-right: .5em;">
+<table cellpadding="4" width="100%">
+<tr>
+<td colspan="3">
+			<div id="now_playing" class="playing_title"></div>
+			<div id="listen_player"></div>
+
+
+
+</td>
+</tr>
+</table>
+</div>
+
+<div style="height: auto; overflow-y: auto; padding: .5em; border: 3px ridge #EBE0CD;">
+
+<table cellpadding="4" width="100%">
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-029a.mp3','Early Christmas, Just Fred and Mark','listen_player', 'play_demo');"
+	title="Play this song"><img id="play_demo" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+Early Christmas, Just Fred and Mark</td>
+<td class="demoDesc">Mom and Dad, Fred and Mark on early Christmas in St. Louis</td>
+<td><a href="../sounds/STE-029a.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a></td>
+</tr>
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-042a.mp3','Early Fred and Mark','listen_player', 'play1');"
+	title="Play this song"><img id="play1" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+Early Fred and Mark</td>
+<td class="demoDesc">Mom and Dad, Grandma, Suzie, Fred and Mark in St. Louis</td>
+<td><a href="../sounds/STE-042a.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a></td>
+</tr>
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-043a.mp3','Invitation to Fred&quot;s 3rd Birthday','listen_player', 'play2');"
+	title="Play this song"><img id="play2" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+Invitation to Fred's 3rd Birthday</td>
+<td class="demoDesc">Mom, Dad, Fred, Mark, Suzie and Grandma in St. Louis</td>
+<td><a href="../sounds/STE-043a.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a></td>
+</tr>
+
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-048a.mp3','St. Louis on Jaimeson','listen_player', 'play4');"
+	title="Play this song"><img id="play4" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+St. Louis on Jaimeson, 1957</td>
+<td class="demoDesc">Tom is an infant</td>
+<td>
+<a href="../sounds/STE-048a.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-036a.mp3','Before Bill and Jenny, at Grandma&quot;s','listen_player', 'play5');"
+	title="Play this song"><img id="play5" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+Before Bill and Jenny, at Grandma&quot;s</td>
+<td class="demoDesc">Lot's of family</td>
+<td><a href="../sounds/STE-036a.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-035a.mp3','Baby-Jenny-Can-Talk','listen_player', 'play6');"
+	title="Play this song"><img id="play6" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+Baby-Jenny-Can-Talk</td>
+<td class="demoDesc">All seven kids plus</td>
+<td><a href="../sounds/STE-035a.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a></td>
+</tr>
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-031a.mp3','Jennifer&quot;s Birthday, 1969','listen_player', 'play7');"
+	title="Play this song"><img id="play7" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+Jennifer's Birthday</td>
+<td class="demoDesc">September 20, 1969</td>
+<td><a href="../sounds/STE-031a.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a></td>
+</tr>
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-037a.mp3','Schobers','listen_player', 'play8');"
+	title="Play"><img id="play8" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+Schobers</td>
+<td class="demoDesc">Schobers with Grandma and Grandpa Saum
+</td>
+<td>
+<a href="../sounds/STE-037a.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="demoIcon" nowrap="true">
+<a href="javascript:nuts( 'STE-044aa.mp3','Schobers and Brocatos','listen_player', 'play9');"
+	title="Play this song"><img id="play9" src="../images/play_button.gif"></a>
+</td>
+<td class="demoTitle">
+Schobers and Brocatos</td>
+<td class="demoDesc">Fun with Schobers and Brocatos</td>
+<td><a href="../sounds/STE-044aa.mp3" title="Download/play mp3"><img src="../images/play-icon4.gif"></a></td>
+</tr>
+
+
+</table>
+</div>
+
+<p class="clr">&nbsp;</p>
+
+
+	</div>
+	</td>
+
+
+
+
+
+
+	</tr>
+<!=====================================================================================>
+
+	<tr><td class="footer" colspan="3"><div class="footWrap">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr valign="top">
+<td width="30%" align="left" class="dat1"><a href="mailto:info@mckenzieduo.com">info@mckenzieduo.com</a></td>
+<td width="40%" align="center">&copy;2004 mcmarkio designs</td>
+<td width="30%" align="right" class="dat1">847-962-8847</td>
+</tr></table>
+	</div></td></tr>
+
+<!=====================================================================================>
+	</table></div></div>
+<!=====================================================================================>
+
+	</body>
+</html>
+
